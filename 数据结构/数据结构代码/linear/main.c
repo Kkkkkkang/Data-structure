@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
     ElemType getElem;
     Sq_List_GetElem(mySqList,1,&getElem);
     
-    int*LocationElem;
+    int LocationElem;
     Sq_List_LocateElem(mySqList,7,&LocationElem);
     return 0;
 }
