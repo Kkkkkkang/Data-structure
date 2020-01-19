@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CC72A92D23D4C44B00685000 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CC72A92C23D4C44B00685000 /* main.c */; };
 		CC72A94223D4C5BE00685000 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CC72A94123D4C5BE00685000 /* main.c */; };
+		CC72A94823D4C71A00685000 /* linear_table.c in Sources */ = {isa = PBXBuildFile; fileRef = CC72A94723D4C71A00685000 /* linear_table.c */; };
+		CC72A94C23D4CBF400685000 /* status.c in Sources */ = {isa = PBXBuildFile; fileRef = CC72A94B23D4CBF400685000 /* status.c */; };
+		CC72A94D23D4CBF400685000 /* status.c in Sources */ = {isa = PBXBuildFile; fileRef = CC72A94B23D4CBF400685000 /* status.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +40,10 @@
 		CC72A92C23D4C44B00685000 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CC72A93F23D4C5BE00685000 /* linear */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = linear; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC72A94123D4C5BE00685000 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CC72A94623D4C71A00685000 /* linear_table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linear_table.h; sourceTree = "<group>"; };
+		CC72A94723D4C71A00685000 /* linear_table.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linear_table.c; sourceTree = "<group>"; };
+		CC72A94A23D4CBF400685000 /* status.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		CC72A94B23D4CBF400685000 /* status.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = status.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 		CC72A92023D4C44B00685000 = {
 			isa = PBXGroup;
 			children = (
+				CC72A94923D4CB9800685000 /* Public */,
 				CC72A92C23D4C44B00685000 /* main.c */,
 				CC72A93623D4C4A000685000 /* 习题代码 */,
 				CC72A92B23D4C44B00685000 /* 数据结构代码 */,
@@ -95,8 +103,19 @@
 			isa = PBXGroup;
 			children = (
 				CC72A94123D4C5BE00685000 /* main.c */,
+				CC72A94623D4C71A00685000 /* linear_table.h */,
+				CC72A94723D4C71A00685000 /* linear_table.c */,
 			);
 			path = linear;
+			sourceTree = "<group>";
+		};
+		CC72A94923D4CB9800685000 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				CC72A94A23D4CBF400685000 /* status.h */,
+				CC72A94B23D4CBF400685000 /* status.c */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC72A92D23D4C44B00685000 /* main.c in Sources */,
+				CC72A94C23D4CBF400685000 /* status.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC72A94223D4C5BE00685000 /* main.c in Sources */,
+				CC72A94D23D4CBF400685000 /* status.c in Sources */,
+				CC72A94823D4C71A00685000 /* linear_table.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

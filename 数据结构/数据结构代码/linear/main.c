@@ -7,9 +7,24 @@
 //
 
 #include <stdio.h>
-
+#include "linear_table.h"
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("linear\n");
+    SqList mySqList;
+//getelem用来接收返回值
+    
+/*
+ *  初始化顺序表
+ */
+    Sq_List_Init(&mySqList);
+    
+    
+    Sq_List_Allocation(&mySqList);
+    
+    ElemType getElem;
+    Sq_List_GetElem(mySqList,1,&getElem);
+    
+    int*LocationElem;
+    Sq_List_LocateElem(mySqList,7,&LocationElem);
     return 0;
 }
+
