@@ -41,5 +41,10 @@ Status Sq_List_LocateElem(SqList L,ElemType x,int*i){
     return ERROR;
 }
 
-
+Status Sq_List_Insert(SqList* L,ElemType x,int i){
+    if(i < 0 || i >= SQ_LIST_SIZE || (*L).length + 1 > SQ_LIST_SIZE){
+        return ERROR;
+    }
+    return OK;
+}
 

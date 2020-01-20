@@ -42,5 +42,9 @@ ElemType Sq_List_GetElem(SqList L,int i,ElemType*p);
  *  按照元素值来查找第一个匹配的index
  */
 Status Sq_List_LocateElem(SqList L,ElemType x,int *i);
+/*
+ * 插入元素算法
+ */
+Status Sq_List_Insert(SqList* L,ElemType x,int i);
 #endif /* linear_table_h */
 
