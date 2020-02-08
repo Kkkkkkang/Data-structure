@@ -12,6 +12,7 @@ Status Sq_List_Init (SqList* L){
     printf("Sq_List_Init初始化成功\n");
     return OK;
 }
+
 Status Sq_List_Allocation (SqList* L){
     int i;
     for(i = 0;i < SQ_LIST_SIZE;i ++){
@@ -22,6 +23,7 @@ Status Sq_List_Allocation (SqList* L){
     printf("分配完毕\n");
     return OK;
 }
+
 Status Sq_List_GetElem(SqList L,int i,ElemType*p){
     if(i < 0 || i >= SQ_LIST_SIZE){
         return ERROR;
@@ -30,6 +32,7 @@ Status Sq_List_GetElem(SqList L,int i,ElemType*p){
     printf("Sq_List_GetElemL的第%d处的值是%d\n",i,L.data[i-1]);
     return OK;
 }
+
 Status Sq_List_LocateElem(SqList L,ElemType x,int*i){
     for(int j = 0;j < SQ_LIST_SIZE;j ++){
         if(L.data[j] == x){
